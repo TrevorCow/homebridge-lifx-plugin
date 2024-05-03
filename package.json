@@ -2,7 +2,7 @@
   "private": false,
   "displayName": "Lifx Plugin",
   "name": "homebridge-lifx-plugin",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "This plugin is a bridge between lifx smart bulbs and your apple homekit",
   "funding": {
     "type": "paypal",
@@ -25,7 +25,8 @@
     "lint": "eslint src/**.ts --max-warnings=0",
     "watch": "npm run build && npm link && nodemon",
     "build": "rimraf ./dist && tsc",
-    "prepublishOnly": "npm run lint && npm run build"
+    "prepublishOnly": "npm run lint && npm run build",
+    "prepare": "npm rum build"
   },
   "keywords": [
     "homebridge-plugin",
